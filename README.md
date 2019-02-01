@@ -40,14 +40,14 @@ Or install it yourself as:
 
 ## Usage
 
-First include Her::Kaminari::HeaderParser in your Her setup like this:
+First include Her::Middleware::PaginationParseJSON in your Her setup like this:
 
 ```ruby
 Her::API.setup url: 'https://api.example.com' do |c|
   #...
 
   # Response
-  c.use Her::Kaminari::HeaderParser
+  c.use Her::Middleware::PaginationParseJSON
 
   # ...
 end
